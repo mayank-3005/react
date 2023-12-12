@@ -1,3 +1,3 @@
 # react
 my first react code
-<h1>mayank</h1>
+Auther name: "mayank"
