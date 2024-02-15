@@ -1,38 +1,303 @@
-.App {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Heading Styles */
+.heading {
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+    font-size: 72px;
+    color: #FFFFFF!important;
+    line-height: 1.3em;
+    margin-bottom: 25px;
+}
+
+
+.paragraph {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+/* Button Styles */
+.button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+  padding: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #c98964; 
+  border-color: #c98964; 
+}
+
+.story-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px;
+}
+
+.left-section {
+  flex: 1;
+ padding:  40px 56px 10px 85px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.story-heading {
+  font-size: 24px;
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  margin-top: 0;
+  position: relative;
+}
+
+.story-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 13%; 
+  border-bottom: 2px solid #c98964; 
+}
+
+.welcome-heading {
+  font-size: 36px;
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.royal-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Best Component Styles */
+.best-container {
+  text-align: center;
+  padding: 50px;
+  background-color: aliceblue;
+}
+
+.best-heading {
+  font-size: 16px;
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  margin-bottom: 10px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.best-sub-heading {
+  font-size: 36px;
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  margin-bottom: 20px;
+}
+
+.best-paragraph {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: gray;
+  font-size: 15px;
+}
+
+.best-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+  padding: 4px 18px;
+  font-size: 15px;
+  background-color: #c98964; 
+  border-color: #c98964; 
+}
+.gird-price{
+  font-size: 30px;
+}
+.grid-text{
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  font-size: 34px;
+}
+
+.image-grid img{
+  height: 340px;
+}
+
+.text-grid{
+  padding: 34px 24px;
+}
+.image-text-container{
+  padding: 0 100px;
+}
+.comment-container{
+  background-color: #333;
+}
+.image-text-box{
+  background-color: #fff;
+}
+
+.testimonials-container{
+  padding: 50px 100px;
+}
+
+.testimonials-heading {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-size: 16px;
+    font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+    margin-bottom: 10px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.testimonials-subheading {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  margin-bottom: 35px 
+}
+
+.rating {
+ 
+  font-size: 12px;
+  color: #c98964; 
+}
+
+.testimonials-grid{
+  gap: 30px;
+}
+
+.news-container {
+  padding: 20px;
+}
+
+.news-header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.news-heading {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-size: 16px;
+    font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+    margin-bottom: 10px;
+    color: gray;
+    text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.news-subheading {
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Playfair Display',Georgia,"Times New Roman",serif;
+  margin-bottom: 35px 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.news-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: gray;
+  margin-bottom: 30px;
+
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.news-item {
+  
+  padding: 20px;
+}
+
+.news-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-item-heading {
+  font-size: 20px;
+  
+  margin-bottom: 5px;
+}
+
+.news-item-subheading {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.news-item-paragraph {
+  font-size: 14px;
+  padding: 10px;
+}
+.news-container{
+  padding: 50px 100px;
+  background-color: aliceblue;
+}
+
+.news-btn{
+  display: block;
+    margin: 0 auto;
+    padding: 4px 18px;
+    background-color: #c98964;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.news-deatails{
+  padding: 14px;
+}
+
+.container {
+  background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  padding: 20px;
+  display: grid;
+  padding-top: 100px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    background-color: rgba(0,0,0,0.75)!important;
+ 
+}
+
+
+
+
+
+
+input, button {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

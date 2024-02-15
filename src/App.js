@@ -1,19 +1,25 @@
-import React, { useState, useCallback } from 'react';
 
-function MyComponent() {
-  const [count, setCount] = useState(0);
+import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-  const handleClick = useCallback(() => {
-    // Function logic
-    console.log("Button clicked!");
-  }, []);
 
+function App() {
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <button onClick={handleClick}>Click me</button>
+    <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  </Router>
+  
+  
     </div>
+  
   );
 }
 
-export default MyComponent;
+export default App;
+
